@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% block title %}
+  <title>Sign Up | Social Media</title>
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form method="post">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+{% endblock %}
