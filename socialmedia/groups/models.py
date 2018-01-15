@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.text import slugify
 import misaka
 from django.contrib.auth import get_user_model
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 User = get_user_model()
 
 from django import template
